@@ -23,7 +23,8 @@ const COL_TITLE_DEF = {
     allowNull:false
 }
 const Users = db.define('user',{    //always define name of table as singular and sequelize will automatically made it plural.
-    
+    id:COL_ID_DF,
+    username:COL_USERNAME_DEF
 });
 
 const Posts = db.define('post',{
