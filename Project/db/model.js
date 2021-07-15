@@ -38,8 +38,20 @@ const Posts = db.define('post',{
 
 const Comments = db.define('comment', {
     id:COL_ID_DF,
-    title:COL_TITLE_DEF
+    title:COL_TITLE_DEF,
+    body:{
+        type:sequelize.DataTypes.TEXT ('tiny') //defines the size of text
+    }
 })
+
+Users.hasMany(Posts)
+Posts.belongsTo(Users)
+
+Users.hasMany(Comments)
+Comments.belongsTo(Users)
+
+Posts.hasMany(Comments)
+Comments.belongsTo(Posts)
 
 module.exports ={
     db,
