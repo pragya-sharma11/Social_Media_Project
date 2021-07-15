@@ -33,7 +33,8 @@ const Posts = db.define('post',{
 })
 
 const Comments = db.define('comment', {
-
+    id:COL_ID_DF,
+    title:COL_TITLE_DEF
 })
 
 module.exports ={
