@@ -28,7 +28,8 @@ const Users = db.define('user',{    //always define name of table as singular an
 });
 
 const Posts = db.define('post',{
-
+    id:COL_ID_DF,
+    title:COL_TITLE_DEF
 })
 
 const Comments = db.define('comment', {
