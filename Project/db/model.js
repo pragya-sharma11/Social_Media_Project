@@ -29,7 +29,11 @@ const Users = db.define('user',{    //always define name of table as singular an
 
 const Posts = db.define('post',{
     id:COL_ID_DF,
-    title:COL_TITLE_DEF
+    title:COL_TITLE_DEF,
+    body:{
+        type:sequelize.DataTypes.TEXT,
+        allowNull:false
+    }
 })
 
 const Comments = db.define('comment', {
