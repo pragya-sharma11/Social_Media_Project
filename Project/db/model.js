@@ -18,6 +18,10 @@ const  COL_USERNAME_DEF = {
     allowNull:false
 }
 
+const COL_TITLE_DEF = {
+    type : sequelize.DataTypes.STRING(140),
+    allowNull:false
+}
 const Users = db.define('user',{    //always define name of table as singular and sequelize will automatically made it plural.
     
 });
