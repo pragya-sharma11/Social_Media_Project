@@ -6,6 +6,10 @@ async function createAnonUser(){
     })
     return user
 }
+
+module.exports={
+    createAnonUser
+}
 /*----------->debugging purpose
 async function task(){
     console.log(await createAnonUser())
