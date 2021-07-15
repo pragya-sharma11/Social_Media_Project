@@ -12,6 +12,12 @@ const COL_ID_DF = {
     primaryKey:true
 }
 
+const  COL_USERNAME_DEF = {
+    type: sequelize.DataTypes.STRING(30),
+    unique : true,
+    allowNull:false
+}
+
 const Users = db.define('user',{    //always define name of table as singular and sequelize will automatically made it plural.
     
 });
