@@ -1,5 +1,5 @@
 const sequelize = require('sequelize')
-const db = sequelize({
+const db = new sequelize({
     dialect : 'mysql',
     database : 'socialmediadb',
     username : 'root',
