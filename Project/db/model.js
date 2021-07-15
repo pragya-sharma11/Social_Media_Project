@@ -18,3 +18,9 @@ const Comments = db.define('comment', {
 
 })
 
+module.exports ={
+    db,
+    Users,
+    Posts,
+    Comments
+}
