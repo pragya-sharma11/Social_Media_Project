@@ -6,6 +6,12 @@ const db = new sequelize({
     password : null 
 })
 
+const COL_ID_DF = {
+    type:sequelize.DataTypes.INTEGER,
+    autoIncrement:true,
+    primaryKey:true
+}
+
 const Users = db.define('user',{    //always define name of table as singular and sequelize will automatically made it plural.
     
 });
