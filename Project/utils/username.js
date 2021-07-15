@@ -9,7 +9,7 @@ const FOODS = [
 function getRandomUserName() {
     let adj = ADJECTIVES[Math.floor(Math.random()*8)]
     let food = FOODS[Math.floor(Math.random()*8)]
-    return `${adj}+${food}`
+    return `${adj} ${food}`
 
 }
 
