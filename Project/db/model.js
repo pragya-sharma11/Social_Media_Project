@@ -14,3 +14,7 @@ const Posts = db.define('post',{
 
 })
 
+const Comments = db.define('comment', {
+
+})
+
