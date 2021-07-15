@@ -10,3 +10,7 @@ const Users = db.define('user',{    //always define name of table as singular an
     
 });
 
+const Posts = db.define('post',{
+
+})
+
