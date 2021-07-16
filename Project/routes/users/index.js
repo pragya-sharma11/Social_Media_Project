@@ -1,6 +1,6 @@
 const route =require('express').Router()
 const { createAnonUser, getUserById, getUserByUsername} = require('../../controllers/users')
-route.get('/', async (req,res)=>{
+route.get('/:id', async (req,res)=>{    //this :id is important here .it basically used here for query for user details using id .
     let user ;
     if(isNaN(parseInt(req.params.id))){
         user = await getUserByUsername(req.params.id)
