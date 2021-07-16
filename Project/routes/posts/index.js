@@ -1,7 +1,7 @@
 const { Router } =require('express')
 
-const postsRoute = Router()
+const route = Router()
 
 module.exports ={
-    postsRoute
+    postsRoute:route
 }
