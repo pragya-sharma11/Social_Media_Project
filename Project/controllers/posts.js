@@ -36,3 +36,8 @@ async function task(){
 
 task()
 */
+
+module.exports ={
+    createNewPost,
+    showAllPosts
+}
