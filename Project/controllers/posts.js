@@ -45,7 +45,7 @@ module.exports ={
 /**
  * module.exports ={
  *  a: function (){}
- *  b: function (){}
+ *  b: function (){ this.a()}
  * }
  * 
  * lib = require(---)
