@@ -2,7 +2,7 @@ const {Posts, Users} = require('../db/model')
 
 async function createNewPost(userId, title, body){
     const post = await Posts.create({
-        title,body,userId
+        userId,title,body
     })
     return post
 }
@@ -12,20 +12,26 @@ async function createNewPost(userId, title, body){
  * showAllPosts({title : ''})
  */
  async function showAllPosts(query){
-    const posts = await Posts.findAll()
+    //todo: handle query params
+    const posts = await Posts.findAll({
+        include :[ Users ]   //this means that we can include Users as query.---left outer join with usertable.
+        //we can include any table in another table only when there is a relationship already defined between those tables in db.
+    })
     return posts
 }
 
 /* Test code */
 
 async function task(){
+    /*
     console.log(await createNewPost(
         1,'this is a simple post','Body of post goes here'
     ))
-
-    console.log(await createNewPost(
-        2,'this is a simple post','Body of post goes here'
-    ))
+        */
+    const posts = await showAllPosts()
+    for(let p of posts){
+        console.log(`${p.title} - author: ${p.user.username} -  ${p.body}\n==============\n`)
+    }
 }
 
 task()
