@@ -9,11 +9,11 @@ async function createAnonUser(){
 }
 
 async function getUserById(){
-    return await users.findOne({id})
+    return await users.findOne({where:{id}}) //without where clause, it will give all users which has some id wven if we have given wrong id in params.
 }
 
 async function getUserByUsername(username){
-    return await users.findOne({username})
+    return await users.findOne({where:{username}})
 }
 
 module.exports={
