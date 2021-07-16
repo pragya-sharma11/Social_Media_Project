@@ -7,6 +7,8 @@ route.get('/',(req,res)=>{
    const post = await findAllPosts()
    res.status(200).send(post)
 })
+
+
 module.exports ={
     postsRoute:route
 }
