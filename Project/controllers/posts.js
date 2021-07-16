@@ -6,3 +6,10 @@ async function createNewPost(userId, title, body){
     })
 }
 
+/**
+ * showallposts({usename : ''})
+ * showAllPosts({title : ''})
+ */
+ async function showAllPosts(query){
+
+}
