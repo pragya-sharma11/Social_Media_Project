@@ -41,3 +41,16 @@ module.exports ={
     createNewPost,
     showAllPosts
 }
+
+/**
+ * module.exports ={
+ *  a: function (){}
+ *  b: function (){}
+ * }
+ * 
+ * lib = require(---)
+ * lib.b() works
+ * 
+ * { b } =require(---)
+ * b()  will not work.
+ */
