@@ -11,7 +11,7 @@ async function createNewPost(userId, title, body){
  * showallposts({usename : ''})
  * showAllPosts({title : ''})
  */
- async function showAllPosts(query){
+ async function findAllPosts(query){
     //todo: handle query params
     const posts = await Posts.findAll({
         include :[ Users ]   //this means that we can include Users as query.---left outer join with usertable.
@@ -39,7 +39,7 @@ task()
 
 module.exports ={
     createNewPost,
-    showAllPosts
+    findAllPosts
 }
 
 /**
