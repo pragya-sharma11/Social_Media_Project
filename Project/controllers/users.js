@@ -17,7 +17,10 @@ async function getUserByUsername(username){
 }
 
 module.exports={
-    createAnonUser
+    createAnonUser,
+    getUserById,
+    getUserByUsername
+
 }
 /*----------->debugging purpose
 async function task(){
