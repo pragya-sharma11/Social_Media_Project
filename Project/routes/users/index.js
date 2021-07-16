@@ -1,11 +1,9 @@
-const { Router } =require('express')
-
-const route = Router()
+const route =require('express').Router()
 
 route.get('/', (req,res)=>{
     res.send('//TODO : All users.')
 })
 
 module.exports ={
-    userRoute : route
+    usersRoute : route
 }
