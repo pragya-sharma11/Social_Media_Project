@@ -14,9 +14,9 @@ async function createNewPost(userId, title, body){
  async function findAllPosts(query){
     //todo: handle query params
     const posts = await Posts.findAll({
-        include :[ Users ]   //this means that we can include Users as query.---left outer join with usertable.
+        include :[ Users ]})//this means that we can include Users as query.---left outer join with usertable.
         //we can include any table in another table only when there is a relationship already defined between those tables in db.
-    })
+    
     return posts
 }
 
