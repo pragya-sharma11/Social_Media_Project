@@ -16,6 +16,7 @@ route.post('/', async (req,res)=>{
         })
     }
     const post = await createNewPosts(userId, title, body)
+    res.status(201).send(post)
 })
 
 module.exports ={
