@@ -12,6 +12,10 @@ async function getUserById(){
     return await users.findOne({id})
 }
 
+async function getUserByUsername(username){
+    return await users.findOne({username})
+}
+
 module.exports={
     createAnonUser
 }
