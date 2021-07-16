@@ -12,7 +12,8 @@ async function createNewPost(userId, title, body){
  * showAllPosts({title : ''})
  */
  async function showAllPosts(query){
-
+    const posts = await Posts.findAll()
+    return posts
 }
 
 /* Test code */
