@@ -16,6 +16,11 @@ route.get('/', async (req,res)=>{
    }
 })
 
+route.post('/', async (req,res)=>{
+    const user = await createAnonUser()
+    res.status(201).send(user)  //201 - thing has successfully created.s
+})
+
 module.exports ={
     usersRoute : route
 }
