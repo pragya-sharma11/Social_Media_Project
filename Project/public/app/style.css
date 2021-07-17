@@ -4,6 +4,7 @@
 }
 footer{
     padding-bottom:1rem;
+    padding-top: 0.5rem;
     position: sticky;
     bottom: 0px;
     background-color: var(--light);
