@@ -2,7 +2,7 @@ $(()=>{
     $('#navbar').load('./components/navbar.html',loginIfNeeded) //callback function is available at load().
     //first loading of component done then only loginIfNeeded will execute.
     $('#footer').load('./components/footer.html')
-
+    $('#content').load('./components/all-articles.html')
 function loginIfNeeded(){
   let currentUser = window.localStorage.user ? JSON.parse(window.localStorage.user) : null;
   if (!currentUser) {
