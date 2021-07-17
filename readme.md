@@ -50,3 +50,12 @@ this js file is used to generate random names for users just like we have in goo
 1. **show all comments of user**
 2. **show all comments under a post**
 3. **add a comment**
+
+### API Documentation
+## `Users`
+1. `POST /users`
+Creates a new user with random username and a user id.
+2. `GET /users/{userid}`
+Get a user with a given user id
+3. `GET /users/{username}`
+Get a user with given username .
