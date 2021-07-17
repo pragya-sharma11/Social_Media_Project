@@ -6,6 +6,9 @@ const route = Router()
 route.get('/',async (req,res)=>{
    const post = await findAllPosts()  //findAllPosts is an async function so we need to make req,res function async.
    res.status(200).send(post)
+    for(let p of post){
+        console.log(p.title)
+    }
 })
 
 route.post('/', async (req,res)=>{

@@ -11,7 +11,7 @@ app.use('/api/posts', postsRoute)
 app.use('/', express.static(__dirname+'/public'))
 
 
-db.sync({alter:true})     //its  a promising function so its used to synchronise with db
+db.sync()     //its  a promising function so its used to synchronise with db
 .then(()=>{
     app.listen(8833, ()=>{
         console.log("server is started on http://localhost:8833")
