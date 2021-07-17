@@ -12,18 +12,18 @@ models : setup connection with database
 It is also used to create tables USERS, POSTS, COMMENTS
 ```
 
-```
-controllers folder
-users : this js file basically use to send users name on Users Table.
-post : 
-comments : 
-```
 
-```
+### controllers folder
+`users` : this js file basically use to send users name on Users Table.
+`post` : 
+`comments` : 
+
+
+
 ## utils folder
-### username : 
+###  username : 
 this js file is used to generate random names for users just like we have in google docs for anonymous users when we share a file into more than one person.
-```
+
 
 ## Business logic
 
@@ -59,3 +59,15 @@ Creates a new user with random username and a user id.
 Get a user with a given user id
 3. `GET /users/{username}`
 Get a user with given username .
+
+### `posts`
+1. `GET /posts`
+Get all posts by everyone.
+2. `POST /posts`
+create new posts.
+Required fieds:--
+```
+userId=
+title=
+body=
+```
