@@ -9,10 +9,12 @@ function loginIfNeeded(){
     console.log(currentUser)
     if(!currentUser){
         $.post('/api/users', {}, (user)=>{
-            if(user){
-                console.log("Logged in as" + user.username)
+            if(user) {
+                console.log("Logged in as " + user.username)
                 window.localStorage.user = JSON.stringify(user)
             }
         })
+    } else {
+        console.log('resuming session as '+ currentUser.username)
     }
 }
