@@ -71,3 +71,20 @@ userId=
 title=
 body=
 ```
+### Frontend-
+`Resources`
+1. bootstrap.css :-
+https://www.jsdelivr.com/package/npm/@coding-blocks/bootstrap?path=dist%2Fcss&version=4.4.2-beta.2
+
+2. bootstrap.js:-
+https://www.jsdelivr.com/package/npm/@coding-blocks/bootstrap?path=dist%2Fjs&version=4.4.2-beta.2
+
+3. muli.css, muli.wolf2, muli-italic.wolf2
+https://github.com/coding-blocks/bootstrap/tree/v4-dev-4.4.1/fonts
+
+4. jquery.js:-
+https://code.jquery.com/jquery-3.4.1.js
+
+5. popper.js:-
+https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.js
+
