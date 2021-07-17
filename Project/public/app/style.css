@@ -1,5 +1,10 @@
 footer{
-    padding :3rem;
+    padding-bottom:1rem;
     position: sticky;
     bottom: 0px;
+    background-color: var(--light);
+}
+
+#content{
+    height: 2000px;
 }
