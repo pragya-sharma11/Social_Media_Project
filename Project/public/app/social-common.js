@@ -24,3 +24,13 @@ function loginIfNeeded(){
   }
 }
 })
+
+/**
+ * https://blog.logrocket.com/localstorage-javascript-complete-guide/
+ * 
+ * check these things if you want to check for your username in console
+ * window.localstorage
+ * window.localstorage.key('feshy shushi')---> user
+ * window.localstorage.removeItem('user')
+ * and run the server again to get new user.
+ */
