@@ -1,5 +1,5 @@
-$( () => {
-  $('#navbar').load('/components/navbar.html', loginIfNeeded)//callback function is available at load().
+$(() => {
+  $('#navbar').load('/components/navbar.html',loginIfNeeded)//callback function is available at load().
   //first loading of component done then only loginIfNeeded will execute.
   //earlier this code was running infinitly coz i attach this script inside navbar.html
   $('#footer').load('../components/footer.html')
@@ -23,5 +23,4 @@ function loginIfNeeded(){
     $('#nav-username').text(currentUser.username)
   }
 }
-
 })
