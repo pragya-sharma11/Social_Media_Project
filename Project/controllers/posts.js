@@ -28,15 +28,15 @@ async function task(){
         1,'this is a simple post','Body of post goes here'
     ))
         
-    const posts = await showAllPosts()
+    const posts = await findAllPosts()
     for(let p of posts){
         console.log(`${p.title} - author: ${p.user.username} -  ${p.body}\n==============\n`)
     }
 }
 
 task()
-*/
 
+*/
 module.exports ={
     createNewPost,
     findAllPosts
