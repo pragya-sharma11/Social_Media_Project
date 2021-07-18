@@ -2,7 +2,11 @@ function loadMyPosts(){
     $.get('/api/posts',(posts)=>{
         for(let p of posts){
             let uId = JSON.parse(window.localStorage.user).id
-            if(p.user.userId == uId){
+            //testing code is commented on.
+            //console.log(uId)
+            //console.log("==="+p.user.id)
+            if(p.user.id == uId){
+                //console.log("Log")
                 $('#posts-container').append(
                     $(`
                     <div class="col-4">
