@@ -18,6 +18,7 @@ route.get('/:id', async (req,res)=>{    //this :id is important here .it basical
 
 route.post('/', async (req,res)=>{
     const user = await createAnonUser()
+    console.log(user)
     res.status(201).send(user)  //201 - thing has successfully created.s
 })
 

@@ -17,9 +17,9 @@ function loginIfNeeded(){
         $('#nav-username').text(currentUser.username)
       }
     })
-  } else {
+    } else {
     console.log('resuming session as ', currentUser.username)
-    //console.log($('#nav-username'))
+    console.log(currentUser.id)
     $('#nav-username').text(currentUser.username)
   }
 }
