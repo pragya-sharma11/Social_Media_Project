@@ -4,7 +4,7 @@ function loadMyPosts(){
             let uId = JSON.parse(window.localStorage.user).id
             //testing code is commented on.
             //console.log(uId)
-            //console.log("==="+p.user.id)
+            //console.log("==="+p.user.id)--->we call the column data of user by users column name not by posts table column name.
             if(p.user.id == uId){
                 //console.log("Log")
                 $('#posts-container').append(
