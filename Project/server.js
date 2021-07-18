@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 /**
  * initially, i have not written these above 2 line becoz of which my post request for users and post(write-post) was not executing .It was unable to access the route.
- * remember!!! express.json() is a function.
+ * remember!!! express.json() is a function .
  */
 app.use('/api/users', usersRoute)
 app.use('/api/posts', postsRoute)
